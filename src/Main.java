@@ -1,15 +1,47 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        //logical operators
+        //&& = (AND)
+        //|| = (OR)
+        // ! = (NOT)
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+
+
+
+                 //AND(&&)
+        int temp = 15;
+        if (temp>30){
+            System.out.println("It is hot outside!");
+        } else if (temp>20 && temp<=30) {
+            System.out.println("It is warm outside");
+        } else {
+            System.out.println("It is cold outside");
         }
+
+                 //OR ||
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("You are playing a game! Press q or Q to quit");
+
+        String response = scanner.next();
+
+        if(response.equals("q") || response.equals("Q")){
+            System.out.println("You quit the game");
+        } else {
+            System.out.println("You are still playing the game **");
+        }
+
+        //NOT(!)
+        if (!response.equals("q") && !response.equals("Q")){
+            System.out.println("You are still playing the game***");
+        } else {
+            System.out.println("You quit the game");
+        }
+
+
+
+
+
     }
 }
